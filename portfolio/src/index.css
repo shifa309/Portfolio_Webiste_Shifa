@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #F7F8FA;
+  --color-panel: #FFFFFF;
+  --color-ink: #12141C;
+  --color-ink-soft: #565B6B;
+  --color-muted: #8A8FA0;
+  --color-border: #E4E6ED;
+  --color-primary: #2A46F0;
+  --color-primary-soft: #EDF0FE;
+  --color-signal: #12B886;
+  --color-signal-soft: #E4F9F1;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+.dark {
+  --color-bg: #0A0A0B;
+  --color-panel: #161618;
+  --color-ink: #F5F5F7;
+  --color-ink-soft: #A1A1AA;
+  --color-muted: #71717A;
+  --color-border: #27272A;
+  --color-primary: #7C9CFF;
+  --color-primary-soft: #1B2242;
+  --color-signal: #22C55E;
+  --color-signal-soft: #14291C;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.blink-cursor {
+  animation: blink 1.1s step-end infinite;
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.focus-ring:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
