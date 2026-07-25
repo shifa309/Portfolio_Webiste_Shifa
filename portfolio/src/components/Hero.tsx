@@ -10,10 +10,23 @@ export default function Hero() {
     <section id="top" className="mx-auto max-w-6xl px-6 pt-16 pb-24 md:pt-24 md:pb-32">
       <div className="grid gap-14 md:grid-cols-[1.15fr_1fr] md:items-center">
         <div>
+          <motion.p
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="mb-5 inline-flex items-center gap-2 rounded-full border border-border bg-panel px-3 py-1 font-mono text-[12px] text-ink-soft"
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-signal opacity-60" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-signal" />
+            </span>
+            {profile.title}
+          </motion.p>
+
           <motion.h1
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.6, delay: 0.05 }}
             className="font-display text-4xl font-semibold leading-[1.08] tracking-tight text-ink md:text-6xl"
           >
             Hello, I'm
@@ -24,11 +37,11 @@ export default function Hero() {
           <motion.p
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
             className="mt-5 max-w-xl text-lg leading-relaxed text-ink-soft"
           >
-            {profile.title} building AI-augmented software — conversational systems,
-            retrieval pipelines and applied ML tools that hold up in production.
+            I build production Generative AI and Agentic AI systems — conversational flows,
+            RAG pipelines, and applied ML tooling that hold up outside the demo.
           </motion.p>
 
           <motion.p
@@ -37,7 +50,8 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-3 max-w-xl text-[15px] leading-relaxed text-muted"
           >
-            {profile.objective}
+            Currently shipping AI-augmented conversational systems at Funavry Technologies —
+            previously Systems Limited and Walee.
           </motion.p>
 
           <motion.div

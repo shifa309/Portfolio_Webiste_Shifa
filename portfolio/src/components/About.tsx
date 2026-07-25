@@ -7,17 +7,18 @@ export default function About() {
       <div className="mt-8 grid gap-10 md:grid-cols-[1fr_1fr]">
         <p className="text-lg leading-relaxed text-ink-soft">
           I'm a Computer Science graduate from NUST, now working as an Associate Software
-          Engineer – AI at Funavry Technologies. My work sits at the intersection of large
-          language models and real business logic — chatbots that hold structured eligibility
-          workflows together, retrieval systems that route between vector search and SQL, and
-          recruitment tooling that turns messy resumes into structured signal.
+          Engineer – AI at Funavry Technologies, building production Generative AI and Agentic
+          AI systems across finance, retail, and recruitment. My work sits at the intersection
+          of large language models and real business logic — chatbots that hold structured
+          eligibility workflows together, retrieval systems that route between vector search and
+          SQL, and test-automation tooling that reasons about its own failures.
         </p>
         <p className="text-lg leading-relaxed text-ink-soft">
           I care about the parts of AI engineering that don't show up in a demo: intent
           disambiguation, language detection that actually adapts turn by turn, metadata-aware
-          retrieval routing. Outside of client work, I mentor through Microsoft's Student
-          Ambassador program and keep building small classifiers and recommenders to stay close
-          to fundamentals.
+          retrieval routing, and validation layers that hold up when correctness is subjective.
+          Outside of client work, I mentor through Microsoft's Student Ambassador program and
+          keep building small classifiers and recommenders to stay close to fundamentals.
         </p>
       </div>
     </section>

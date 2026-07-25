@@ -7,15 +7,15 @@ export default function Skills() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading eyebrow="// skills" title="Toolkit" />
 
-        <div className="mt-10 grid gap-8 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {Object.entries(skills).map(([group, items]) => (
-            <div key={group}>
-              <h3 className="font-mono text-[13px] text-muted">{group}</h3>
+            <div key={group} className="rounded-xl border border-border bg-bg p-5">
+              <h3 className="font-mono text-[12px] uppercase tracking-wide text-muted">{group}</h3>
               <div className="mt-3 flex flex-wrap gap-2">
                 {items.map((s) => (
                   <span
                     key={s}
-                    className="rounded-lg border border-border bg-bg px-3 py-1.5 text-[14px] text-ink"
+                    className="rounded-lg border border-border bg-panel px-2.5 py-1 text-[13px] text-ink"
                   >
                     {s}
                   </span>
