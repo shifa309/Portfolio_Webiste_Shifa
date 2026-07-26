@@ -15,29 +15,33 @@ export const experience = [
     company: "Funavry Technologies",
     role: "Associate Software Engineer – AI",
     period: "Oct 2025 – Present",
+    location: "Islamabad, Pakistan",
+    stack: ["LangChain", "LangGraph", "RAG", "FastAPI", "React", "TypeScript", "OpenAI"],
     points: [
-      "Owned the conversational experience for Tamweel, Aljazeera's customer-facing finance chatbot — redesigned the flow so users complete eligibility journeys through free-text conversation, with per-turn English/Arabic detection that widened accessibility for the target audience.",
-      "Built Delmontie, an AI-powered SOP chatbot that answers natural-language questions across both policy documents and structured company data.",
-      "Built and maintain an in-house, module-agnostic API test-automation platform (React/TypeScript + FastAPI) for Libbi, an AI-powered productivity OS — driving ~200 tracked test cases across its real-time Communicator module.",
-      "Built an LLM-as-judge validation layer for subjective correctness checks, returning structured JSON verdicts with reasoning instead of exact-match assertions.",
-      "Engineered AI-generated failure diagnostics that turn raw run data into root-cause analysis and fix suggestions, plus an OpenAI-backed in-app assistant grounded in the platform's own validation model.",
+      "Owned the conversational experience for Tamweel, Aljazeera's finance chatbot — free-text eligibility journeys with per-turn English/Arabic detection.",
+      "Built Delmontie, an AI-powered SOP chatbot answering natural-language questions across policy documents and structured data.",
+      "Built and maintain an API test-automation platform for Libbi, driving ~200 tracked test cases, with an LLM-as-judge validation layer and AI-generated failure diagnostics.",
     ],
   },
   {
     company: "Systems Limited",
     role: "Associate Consultant – AI",
     period: "Sept 2024 – Dec 2024",
+    location: "Islamabad, Pakistan",
+    stack: ["Azure OpenAI", "FastAPI", "Streamlit", "Blob Storage"],
     points: [
-      "Delivered Geni, an end-to-end AI recruitment platform automating JD creation, résumé screening, candidate evaluation, and interview assessment — streamlining the client's hiring workflow.",
+      "Delivered Geni, an end-to-end AI recruitment platform automating JD creation, résumé screening, and interview assessment.",
     ],
   },
   {
     company: "Walee",
     role: "Software Development Intern",
     period: "June 2023 – June 2024",
+    location: "Islamabad, Pakistan",
+    stack: ["Python", "Full-Stack Development", "Recommendation Systems"],
     points: [
-      "Built my Final Year Project, Cre8iv, during the internship — a social media content recommendation platform serving businesses and content creators across Instagram and Facebook.",
-      "Contributed to full-stack software development and feature delivery across web applications, collaborating with the engineering team through the full development lifecycle.",
+      "Built Cre8iv, my Final Year Project, as a social media content recommendation platform for Instagram and Facebook.",
+      "Contributed to full-stack feature delivery across web applications through the full development lifecycle.",
     ],
   },
 ];
@@ -46,50 +50,68 @@ export const projects = [
   {
     tag: "Final Year Project · NUST × Walee",
     icon: "sparkles",
+    cover: "recommend",
     name: "Cre8iv — Social Media Content Recommendation System",
     description:
       "Content recommendation engine trained on Instagram and Facebook data, pairing deep-learning models with NLP-based feature extraction to surface tailored content suggestions. Shortlisted top 3 for the Rector's Gold Medal and selected for the 10 Pearls FYP Accelerator Program.",
     stack: ["Python", "Deep Learning", "NLP", "Recommendation Systems"],
+    codeUrl: "",
+    demoUrl: "",
   },
   {
     tag: "AI Project · Funavry Technologies",
     icon: "messageSquare",
+    cover: "chat",
     name: "Tamweel — Aljazeera Finance Chatbot",
     description:
       "Conversational AI pipeline pairing free-text natural-language understanding with a structured eligibility engine. Implements per-turn language detection and response adaptation for English and Arabic.",
     stack: ["LangChain", "RAG", "Prompt Engineering", "Arabic NLP"],
+    codeUrl: "",
+    demoUrl: "",
   },
   {
     tag: "AI Project · Funavry Technologies",
     icon: "database",
+    cover: "retrieval",
     name: "Delmontie — SOP Chatbot",
     description:
       "RAG + SQL-Agent architecture built on LangChain Self-Query Retrieval over a vector store, with metadata-aware routing that dispatches each query to document retrieval or a SQL agent.",
     stack: ["LangChain", "SQL Agent", "RAG", "Vector DB"],
+    codeUrl: "",
+    demoUrl: "",
   },
   {
     tag: "Test Automation · Funavry Technologies",
     icon: "workflow",
+    cover: "workflow",
     name: "Libbi — Test Automation Platform",
     description:
       "A visual, node-based platform for building API test workflows without scripting — auth chains, HTTP steps, conditional routing, and response-validation checks as graph nodes, with dual-layer validation cross-checking MongoDB state against real-time Firebase events.",
     stack: ["React", "TypeScript", "FastAPI", "MongoDB", "Firebase", "OpenAI"],
+    codeUrl: "",
+    demoUrl: "",
   },
   {
     tag: "Gen AI Project · Systems Limited",
     icon: "userCheck",
+    cover: "hiring",
     name: "Geni — The Genius Behind Smart Hiring",
     description:
       "End-to-end AI recruitment platform automating JD generation, résumé parsing and scoring, and interview evaluation — built on Azure OpenAI with FastAPI services, Blob Storage for artifacts, and a Streamlit interface.",
     stack: ["Azure OpenAI", "FastAPI", "Streamlit", "Blob Storage"],
+    codeUrl: "",
+    demoUrl: "",
   },
   {
     tag: "Artificial Intelligence · NUST",
     icon: "tags",
+    cover: "classifier",
     name: "Social Media Brand Classifier",
     description:
       "Collected data from Instagram and applied NLP-based keyword extraction to classify brand type and page category.",
     stack: ["Python", "NLP", "Keyword Extraction"],
+    codeUrl: "",
+    demoUrl: "",
   },
 ];
 

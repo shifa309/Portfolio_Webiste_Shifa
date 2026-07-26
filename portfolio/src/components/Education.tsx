@@ -5,7 +5,10 @@ import { GraduationCap, Award, Sparkles } from "lucide-react";
 export default function Education() {
   return (
     <section id="education" className="mx-auto max-w-6xl px-6 py-20">
-      <SectionHeading eyebrow="// education" title="Education, certifications & extras" />
+      <SectionHeading
+        title="Education, certifications & extras"
+        subtitle="Academic background, certifications, and the extracurricular work that shaped how I build."
+      />
 
       <div className="mt-10 grid gap-10 md:grid-cols-2">
         <div>
